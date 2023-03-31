@@ -7,6 +7,13 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+
+/**
+ * @OA\Tag(
+ *     name="Currency",
+ *     description="Currency Exchange API endpoint"
+ * )
+ */
 class CurrencyConverterController
 {
     /**
