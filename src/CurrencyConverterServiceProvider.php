@@ -3,7 +3,6 @@
 namespace Dbaeka\BuckhillCurrencyConverter;
 
 use Dbaeka\BuckhillCurrencyConverter\Console\Commands\RefreshRates;
-use Dbaeka\BuckhillCurrencyConverter\ScheduledJobs\UpdateRatesJob;
 use Dbaeka\BuckhillCurrencyConverter\Services\Client;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
@@ -48,7 +47,7 @@ class CurrencyConverterServiceProvider extends ServiceProvider
 
         $this->app->booted(function () {
             $schedule = $this->app->make(Schedule::class);
-            $schedule->job(new UpdateRatesJob());
+            $schedule->command('exchange:update-rates')->dailyAt('07:00');
         });
     }
 }
