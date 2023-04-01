@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 /**
  * @OA\Tag(
  *     name="Currency",
- *     description="Currency Exchange API endpoint"
+ *     description="Currency Exchange Rate API endpoint"
  * )
  */
 class CurrencyConverterController
