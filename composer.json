@@ -21,7 +21,6 @@
     "illuminate/console": "^10.5",
     "illuminate/support": "^10.5",
     "guzzlehttp/guzzle": "^7",
-    "dracoblue/craur": "^2",
     "mtownsend/xml-to-array": "^2.0.0"
   },
   "require-dev": {
