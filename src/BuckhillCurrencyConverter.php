@@ -14,7 +14,7 @@ class BuckhillCurrencyConverter
             $rates = app(Client::class)->getRates();
             Cache::put('exchange_rates', $rates, now()->secondsUntilEndOfDay());
         }
-        $rate = data_get($rates, $currency);
+        $rate = data_get($rates, strtoupper($currency));
         return $rate ? round($amount * $rate, 2) : null;
     }
 }
