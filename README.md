@@ -4,7 +4,7 @@ This package provides access to get the exchange amount for any currency
 
 ## Usage
 The package is configured to be used within the main Pets Store.
-Check out the [Pets Store Repository](https://github.com/dbaeka/buckhill-pet-commerce) for steps on adding this package as a submodule
+Check out the [Pets Store Repository](https://github.com/dbaeka/pet-commerce) for steps on adding this package as a submodule
 
 ## Testing
 To run tests, simply run
